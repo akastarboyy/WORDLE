@@ -2,7 +2,6 @@
     #include<time.h>
     #include<stdlib.h>
     #include<string.h>
-
     #define NoofChances 5
     
     int main()
@@ -20,11 +19,9 @@
         char wrongpos[6];
         char correctpos[6];
 
-
         /* Code begins */
         printf("I WELCOME YOU TO THE GAME ! \n");
         
-
         //Take a random word from a file and store it in question array
         FILE *file = fopen("WORDS.txt","r");
         if(file == NULL)   
@@ -95,6 +92,7 @@
 
             wrongpos[wrongpos_counter] = '\0';
             correctpos[correctpos_counter] = '\0';
+
 
             // printf("Correct letter and in correct pos \n");
             // for(int i=0;i<correctpos_counter;i++)
